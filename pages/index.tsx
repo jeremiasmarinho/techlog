@@ -5,6 +5,7 @@ import Image from "next/image";
 import { fadeIn } from "../variants";
 import ParticlesContainer from "../components/ParticlesContainer";
 import Avatar from "../components/Avatar";
+import WhatsAppWidget from "../components/WhatsAppWidget";
 import Head from "next/head";
 
 const Home: FC = () => {
@@ -75,6 +76,7 @@ const Home: FC = () => {
           <Avatar />
         </motion.div>
       </div>
+      <WhatsAppWidget />
     </div>
   );
 };
