@@ -2,6 +2,7 @@ import type { FC, FormEvent, ChangeEvent } from "react";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { BsArrowRight } from "react-icons/bs";
+import Head from "next/head";
 
 import { fadeIn } from "@/variants";
 import type { ContactFormData } from "@/types/contact";
@@ -73,6 +74,13 @@ const Contact: FC = () => {
 
   return (
     <div className="h-full bg-primary/30">
+      <Head>
+        <title>Fale Conosco | TechLog Sistemas</title>
+        <meta
+          name="description"
+          content="Tire suas ideias do papel. Entre em contato com a TechLog Sistemas e solicite um orçamento para seu site ou aplicativo."
+        />
+      </Head>
       <div className="container mx-auto pt-32 xl:pt-32 pb-20 text-center xl:text-left flex items-center justify-center h-full">
         <div className="flex flex-col w-full max-w-[700px]">
           <motion.h2

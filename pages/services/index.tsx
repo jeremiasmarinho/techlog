@@ -1,5 +1,6 @@
 import type { FC } from "react";
 import { motion } from "framer-motion";
+import Head from "next/head";
 
 import ServiceSlider from "@/components/ServiceSlider";
 import Bulb from "@/components/Bulb";
@@ -9,6 +10,13 @@ import { fadeIn } from "@/variants";
 const Services: FC = () => {
   return (
     <div className="h-full bg-primary/30 pt-8 xl:pt-32 pb-20 flex items-center">
+      <Head>
+        <title>Nossos Serviços | TechLog Sistemas</title>
+        <meta
+          name="description"
+          content="Desenvolvimento Web, Apps, Marketing Digital e Design. Soluções completas para escalar o seu negócio."
+        />
+      </Head>
       <Circles />
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row gap-x-8">

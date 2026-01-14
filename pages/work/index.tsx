@@ -1,5 +1,6 @@
 import type { FC } from "react";
 import { motion } from "framer-motion";
+import Head from "next/head";
 
 import WorkSlider from "@/components/WorkSlider";
 import Bulb from "@/components/Bulb";
@@ -9,6 +10,13 @@ import { fadeIn } from "@/variants";
 const Work: FC = () => {
   return (
     <div className="h-full bg-primary/30 py-36 flex items-center">
+      <Head>
+        <title>Portfólio | TechLog Sistemas</title>
+        <meta
+          name="description"
+          content="Confira nossos projetos recentes. Sites e aplicativos que geram resultados reais para nossos clientes."
+        />
+      </Head>
       <Circles />
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row gap-x-8">

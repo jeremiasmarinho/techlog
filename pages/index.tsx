@@ -5,10 +5,18 @@ import Image from "next/image";
 import { fadeIn } from "../variants";
 import ParticlesContainer from "../components/ParticlesContainer";
 import Avatar from "../components/Avatar";
+import Head from "next/head";
 
 const Home: FC = () => {
   return (
     <div className="bg-primary/60 h-full">
+      <Head>
+        <title>TechLog Sistemas | Sites Rápidos e Modernos</title>
+        <meta
+          name="description"
+          content="Converta visitantes em clientes com sites de alta performance. A TechLog une design, tecnologia e marketing para alavancar seus resultados."
+        />
+      </Head>
       <div className="w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10">
         {/* Logo abaixo das redes sociais - apenas mobile */}
         <motion.div

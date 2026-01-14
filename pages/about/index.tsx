@@ -3,6 +3,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import CountUp from "react-countup";
 import Image from "next/image";
+import Head from "next/head";
 
 import Circles from "@/components/Circles";
 import { fadeIn } from "@/variants";
@@ -13,6 +14,13 @@ const About: FC = () => {
 
   return (
     <div className="h-full bg-primary/30 pt-44 xl:pt-32 pb-20 text-center xl:text-left">
+      <Head>
+        <title>Sobre Nós | TechLog Sistemas</title>
+        <meta
+          name="description"
+          content="Conheça a história e os diferenciais da TechLog. Especialistas em transformar ideias em soluções digitais de alto impacto."
+        />
+      </Head>
       <Circles />
       <motion.div
         variants={fadeIn("right", 0.2)}

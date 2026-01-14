@@ -1,0 +1,20 @@
+{
+  "name": "TechLog Sistemas",
+  "short_name": "TechLog",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#f13024",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/logosimples.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}
