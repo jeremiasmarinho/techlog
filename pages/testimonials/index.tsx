@@ -1,9 +1,10 @@
-import TestimonialSlider from "../../components/TestimonialSlider";
-
+import type { FC } from "react";
 import { motion } from "framer-motion";
-import { fadeIn } from "../../variants";
 
-const Testimonials = () => {
+import TestimonialSlider from "@/components/TestimonialSlider";
+import { fadeIn } from "@/variants";
+
+const Testimonials: FC = () => {
   return (
     <div className="h-full bg-primary/30 py-32 text-center">
       <div className="container mx-auto h-full flex flex-col justify-center">
@@ -14,7 +15,8 @@ const Testimonials = () => {
           exit="hidden"
           className="text-2xl xl:h2 mt-12 xl:mt-4 mb-3 xl:mb-0"
         >
-          O que nossos clientes <span className="text-accent">dizem.</span>
+          Resultados reais de quem confiou na
+          <span className="text-accent"> TechLog.</span>
         </motion.h2>
         <motion.div
           variants={fadeIn("up", 0.4)}

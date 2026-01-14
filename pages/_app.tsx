@@ -1,20 +1,21 @@
 import "../styles/globals.css";
 
+import type { AppProps } from "next/app";
+import { useRouter } from "next/router";
+import Head from "next/head";
+import { AnimatePresence, motion } from "framer-motion";
+
 import Layout from "../components/Layout";
 import Transition from "../components/Transition";
 
-import { useRouter } from "next/router";
-
-import { AnimatePresence, motion } from "framer-motion";
-import Head from "next/head";
-
-function MyApp({ Component, pageProps }) {
+export default function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
+
   return (
     <Layout>
       <Head>
-      <link rel="shortcut icon" href="/favicon.ico" />
-      <title>TechLog Sistemas</title>
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <title>TechLog Sistemas</title>
       </Head>
       <AnimatePresence mode="wait">
         <motion.div key={router.route} className="h-full">
@@ -25,5 +26,3 @@ function MyApp({ Component, pageProps }) {
     </Layout>
   );
 }
-
-export default MyApp;

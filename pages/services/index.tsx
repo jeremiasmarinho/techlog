@@ -1,13 +1,14 @@
-import ServiceSlider from "../../components/ServiceSlider";
-import Buld from "../../components/Bulb";
-import Circles from "../../components/Circles";
-
+import type { FC } from "react";
 import { motion } from "framer-motion";
-import { fadeIn } from "../../variants";
 
-const Services = () => {
+import ServiceSlider from "@/components/ServiceSlider";
+import Bulb from "@/components/Bulb";
+import Circles from "@/components/Circles";
+import { fadeIn } from "@/variants";
+
+const Services: FC = () => {
   return (
-    <div className="h-full bg-primary/30 py-36 flex items-center">
+    <div className="h-full bg-primary/30 pt-8 xl:pt-32 pb-20 flex items-center">
       <Circles />
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row gap-x-8">
@@ -17,18 +18,21 @@ const Services = () => {
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="text-2xl xl:h2  mb-6 xl:mb-0 xl:mt-4"
+              className="text-2xl xl:h2 mb-6"
             >
-              Nossos serviços <span className="text-accent">.</span>
+              Soluções digitais que impulsionam o seu negócio
+              <span className="text-accent">.</span>
             </motion.h2>
             <motion.p
               variants={fadeIn("up", 0.4)}
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="mb-4 max-w-[400px] mx-auto lg:mx-0"
+              className="mb-8 max-w-[400px] mx-auto lg:mx-0"
             >
-              Oferecemos os seguintes serviços de criação de sites:
+              Do site institucional ao e-commerce completo, cada projeto é
+              pensado para performance, segurança e geração de oportunidades
+              para a sua empresa.
             </motion.p>
           </div>
           <motion.div
@@ -42,7 +46,7 @@ const Services = () => {
           </motion.div>
         </div>
       </div>
-      <Buld />
+      <Bulb />
     </div>
   );
 };

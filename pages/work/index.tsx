@@ -1,11 +1,12 @@
-import WorkSlider from "../../components/WorkSlider";
-import Buld from "../../components/Bulb";
-import Circles from "../../components/Circles";
-
+import type { FC } from "react";
 import { motion } from "framer-motion";
-import { fadeIn } from "../../variants";
 
-const Work = () => {
+import WorkSlider from "@/components/WorkSlider";
+import Bulb from "@/components/Bulb";
+import Circles from "@/components/Circles";
+import { fadeIn } from "@/variants";
+
+const Work: FC = () => {
   return (
     <div className="h-full bg-primary/30 py-36 flex items-center">
       <Circles />
@@ -19,7 +20,8 @@ const Work = () => {
               exit="hidden"
               className="text-2xl xl:h2 mb-4 xl:mb-0 xl:mt-12 mt-12"
             >
-              Nossos Trabalhos <span className="text-accent">.</span>
+              Projetos que transformam presença online em
+              <span className="text-accent"> resultado.</span>
             </motion.h2>
             <motion.p
               variants={fadeIn("up", 0.4)}
@@ -28,9 +30,9 @@ const Work = () => {
               exit="hidden"
               className="mb-4 max-w-[400px] mx-auto lg:mx-0"
             >
-              Nós entregamos sites de alta qualidade, com design moderno,
-              funcionalidade, velocidade e otimização para os mecanismos de
-              busca.
+              Conheça alguns dos sites que criamos para empresas de diferentes
+              segmentos, sempre com foco em design, performance e conversão de
+              visitantes em clientes.
             </motion.p>
           </div>
           <motion.div
@@ -44,7 +46,7 @@ const Work = () => {
           </motion.div>
         </div>
       </div>
-      <Buld />
+      <Bulb />
     </div>
   );
 };

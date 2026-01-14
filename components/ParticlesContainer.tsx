@@ -1,12 +1,16 @@
+import type { FC } from "react";
+import { memo, useCallback } from "react";
 import { Particles } from "react-tsparticles";
 import { loadFull } from "tsparticles";
-import React, { useCallback } from "react";
+import type { Engine } from "tsparticles-engine";
 
-const ParticlesContainer = () => {
-  const particlesInit = useCallback(async (engine) => {
+const ParticlesContainer: FC = () => {
+  const particlesInit = useCallback(async (engine: Engine) => {
     await loadFull(engine);
   }, []);
-  const particlesLoaded = useCallback(async (engine) => {}, []);
+
+  const particlesLoaded = useCallback(async () => {}, []);
+
   return (
     <Particles
       className="w-full h-full absolute translate-z-0"
@@ -20,7 +24,7 @@ const ParticlesContainer = () => {
             value: "",
           },
         },
-        fpsLimit: 120,
+        fpsLimit: 60,
         interactivity: {
           events: {
             onClick: {
@@ -35,7 +39,7 @@ const ParticlesContainer = () => {
           },
           modes: {
             push: {
-              quantily: 90,
+              quantity: 90,
             },
             repulse: {
               distance: 200,
@@ -72,7 +76,7 @@ const ParticlesContainer = () => {
               enable: true,
               area: 800,
             },
-            value: 80,
+            value: 60,
           },
           opacity: {
             value: 0.5,
@@ -90,4 +94,4 @@ const ParticlesContainer = () => {
   );
 };
 
-export default ParticlesContainer;
+export default memo(ParticlesContainer);
