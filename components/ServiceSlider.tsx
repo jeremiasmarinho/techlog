@@ -1,7 +1,7 @@
 import type { FC } from "react";
 import { memo } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { FreeMode, Pagination } from "swiper";
+import { FreeMode, Pagination } from "swiper/modules";
 import { RxArrowTopRight } from "react-icons/rx";
 
 import { services } from "@/data/services";

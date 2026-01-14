@@ -1,7 +1,7 @@
 import type { FC } from "react";
 import { memo } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper";
+import { Pagination } from "swiper/modules";
 import { BsArrowRight } from "react-icons/bs";
 import Image from "next/image";
 
