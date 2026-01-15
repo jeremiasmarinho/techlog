@@ -98,7 +98,7 @@ const Contact: FC = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="text-sm xl:text-lg text-white/70 max-w-[520px] mx-auto mb-8"
+            className="hidden md:block text-sm xl:text-lg text-white/70 max-w-[520px] mx-auto mb-8"
           >
             Preencha os campos abaixo contando um pouco sobre o seu negócio e o
             tipo de site que você precisa. Em até 24 horas entraremos em contato

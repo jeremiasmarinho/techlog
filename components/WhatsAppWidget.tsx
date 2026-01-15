@@ -20,7 +20,7 @@ const WhatsAppWidget: FC = () => {
       initial={{ scale: 0, opacity: 0 }}
       animate={{ scale: 1, opacity: 1 }}
       transition={{ delay: 1, duration: 0.5, ease: "easeOut" }}
-      className="fixed bottom-[100px] xl:bottom-6 right-6 z-50"
+      className="fixed bottom-[64px] xl:bottom-6 right-6 z-50"
     >
       <button
         onClick={handleClick}

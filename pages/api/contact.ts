@@ -53,10 +53,16 @@ const sendEmailResend = async (formData: ContactFormData) => {
 const sendEmailSMTP = async (formData: ContactFormData) => {
   const nodemailer = await import("nodemailer");
 
+  const smtpPort = Number(process.env.SMTP_PORT) || 465;
+  const smtpSecure =
+    process.env.SMTP_SECURE !== undefined
+      ? process.env.SMTP_SECURE === "true"
+      : smtpPort === 465;
+
   const transporter = nodemailer.default.createTransport({
     host: process.env.SMTP_HOST || "smtp.hostinger.com",
-    port: Number(process.env.SMTP_PORT) || 465,
-    secure: true, // true para porta 465
+    port: smtpPort,
+    secure: smtpSecure,
     auth: {
       user: process.env.SMTP_USER,
       pass: process.env.SMTP_PASS,
@@ -65,7 +71,7 @@ const sendEmailSMTP = async (formData: ContactFormData) => {
 
   await transporter.sendMail({
     from: process.env.SMTP_USER,
-    to: process.env.CONTACT_EMAIL,
+    to: process.env.CONTACT_EMAIL || process.env.SMTP_USER,
     replyTo: formData.email,
     subject: `[Site] ${formData.subject}`,
     html: `
