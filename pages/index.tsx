@@ -25,7 +25,7 @@ const Home: FC = () => {
           initial="hidden"
           animate="show"
           exit="hidden"
-          className="xl:hidden flex justify-center pt-[160px]"
+          className="xl:hidden flex justify-center pt-[140px]"
         >
           <Image
             src="/logosimples.png"
@@ -41,7 +41,7 @@ const Home: FC = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="text-2xl xl:h1 -mt-[440px] xl:mt-0 drop-shadow-[0_4px_20px_rgba(241,48,36,0.3)]"
+            className="text-2xl xl:h1 -mt-[460px] xl:mt-0 drop-shadow-[0_4px_20px_rgba(241,48,36,0.3)]"
           >
             Tecnologia que organiza <br />e escala
             <span className="text-slate-200"> seu negócio</span>
