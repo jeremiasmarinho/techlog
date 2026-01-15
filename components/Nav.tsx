@@ -20,7 +20,7 @@ interface NavLink {
 const navData: NavLink[] = [
   { name: "home", path: "/", icon: <HiHome /> },
   { name: "sobre", path: "/about", icon: <HiUser /> },
-  { name: "servicos", path: "/services", icon: <HiRectangleGroup /> },
+  { name: "soluções", path: "/services", icon: <HiRectangleGroup /> },
   // { name: "trabalhos", path: "/work", icon: <HiViewColumns /> },
   // {
   //   name: "depoimentos",
@@ -28,7 +28,7 @@ const navData: NavLink[] = [
   //   icon: <HiChatBubbleBottomCenterText />,
   // },
   {
-    name: "contatos",
+    name: "fale conosco",
     path: "/contact",
     icon: <HiEnvelope />,
   },

@@ -28,25 +28,25 @@ const ServiceSlider: FC = () => {
         clickable: true,
       }}
       modules={[FreeMode, Pagination]}
-      className="h-[240px] sm:h-[340px]"
+      className="h-[210px] sm:h-[270px]"
     >
       {services.map((item, index) => (
-        <SwiperSlide key={index}>
-          <div className="glass-card gradient-border h-max rounded-2xl px-6 py-8 flex sm:flex-col gap-x-6 sm:gap-x-0 group cursor-pointer hover:shadow-premium transition-all duration-500 hover:-translate-y-2 glow-on-hover">
-            <div className="text-4xl text-accent mb-4 transition-transform group-hover:scale-110 group-hover:rotate-12 duration-300">
+        <SwiperSlide key={index} className="h-full">
+          <div className="glass-card gradient-border h-full min-h-[180px] sm:min-h-[220px] rounded-3xl px-5 py-4 flex flex-col justify-between">
+            <div className="text-3xl sm:text-4xl text-accent mb-2 sm:mb-3 transition-transform group-hover:scale-110 group-hover:rotate-12 duration-300">
               {item.icon}
             </div>
 
-            <div className="mb-8">
-              <div className="mb-2 text-base xl:text-lg font-semibold">
+            <div className="mb-3">
+              <div className="mb-1 sm:mb-2 text-sm sm:text-base xl:text-lg font-semibold">
                 {item.title}
               </div>
-              <p className="max-w-[350px] leading-normal text-white/70">
+              <p className="max-w-[350px] leading-normal text-white/70 text-xs sm:text-sm">
                 {item.description}
               </p>
             </div>
-            <div className="text-3xl ml-auto">
-              <RxArrowTopRight className="group-hover:rotate-45 group-hover:text-accent transition-all duration-500" />
+            <div className="text-3xl ml-auto mt-auto">
+              <RxArrowTopRight />
             </div>
           </div>
         </SwiperSlide>

@@ -215,6 +215,7 @@ const Contact: FC = () => {
             <p>Razão social: TECHLOG TECNOLOGIA EM SISTEMAS LTDA</p>
             <p>Nome fantasia: TechLog Sistemas</p>
             <p>CNPJ: 15.526.540/0001-80</p>
+            <p>Especialistas em Sistemas Web e Saúde</p>
             <p>E-mail de contato: contato@techlogsistemas.cloud</p>
             <p>Telefone: (63) 99973-4569</p>
           </motion.div>
@@ -241,6 +242,7 @@ const Contact: FC = () => {
             <p>Razão social: TECHLOG TECNOLOGIA EM SISTEMAS LTDA</p>
             <p>Nome fantasia: TechLog Sistemas</p>
             <p>CNPJ: 15.526.540/0001-80</p>
+            <p>Especialistas em Sistemas Web e Saúde</p>
             <p>E-mail de contato: contato@techlogsistemas.cloud</p>
             <p>Telefone: (63) 99973-4569</p>
           </motion.div>

@@ -12,10 +12,10 @@ const Home: FC = () => {
   return (
     <div className="bg-primary/60 h-full">
       <Head>
-        <title>TechLog Sistemas | Sites Rápidos e Modernos</title>
+        <title>TechLog Sistemas | Software e Automação em Araguaína</title>
         <meta
           name="description"
-          content="Converta visitantes em clientes com sites de alta performance. A TechLog une design, tecnologia e marketing para alavancar seus resultados."
+          content="Sistemas web, automações e portais corporativos para clínicas e empresas. A TechLog une engenharia de software e visão de negócios em Araguaína."
         />
       </Head>
       <div className="w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10">
@@ -43,9 +43,8 @@ const Home: FC = () => {
             exit="hidden"
             className="text-2xl xl:h1 -mt-[440px] xl:mt-0 drop-shadow-[0_4px_20px_rgba(241,48,36,0.3)]"
           >
-            Transforme seu site <br />
-            no seu
-            <span className="text-slate-200"> melhor vendedor</span>
+            Tecnologia que organiza <br />e escala
+            <span className="text-slate-200"> seu negócio</span>
           </motion.h1>
           <motion.p
             variants={fadeIn("down", 0.3)}
@@ -54,11 +53,11 @@ const Home: FC = () => {
             exit="hidden"
             className="max-w-sm xl:max-w-xl text-sm xl:text-lg mx-auto xl:mx-0 mb-8 mt-4 xl:mt-0 xl:mb-16 text-white/80 leading-relaxed"
           >
-            Na TechLog criamos sites rápidos, modernos e orientados a
-            resultados. Unimos estratégia de marketing digital, design e
-            tecnologia para transformar visitantes em clientes. Cuidamos de toda
-            a jornada — do planejamento à manutenção — para que você foque no
-            que mais importa: crescer o seu negócio.
+            Na TechLog desenvolvemos sistemas web, automações e portais
+            corporativos. Unimos engenharia de software e visão de negócios para
+            transformar processos manuais em digitais. Cuidamos de toda a
+            tecnologia — da segurança à implantação — para que você foque no que
+            mais importa: atender seus pacientes e clientes.
           </motion.p>
         </div>
       </div>

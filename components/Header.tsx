@@ -23,7 +23,7 @@ const Header: FC = () => {
               className="drop-shadow-[0_0_15px_rgba(241,48,36,0.3)]"
             />
           </Link>
-          <div className="glass-card rounded-full px-6 py-3 shadow-premium">
+          <div className="glass-card rounded-full px-6 py-3 shadow-premium mt-3 lg:mt-0">
             <Socials />
           </div>
         </div>

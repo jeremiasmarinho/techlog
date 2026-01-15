@@ -9,7 +9,7 @@ import { fadeIn } from "@/variants";
 
 const Services: FC = () => {
   return (
-    <div className="h-full bg-primary/30 pt-8 xl:pt-32 pb-20 flex items-center">
+    <div className="h-full bg-primary/30 pt-0 xl:pt-6 pb-0 flex items-center">
       <Head>
         <title>Nossos Serviços | TechLog Sistemas</title>
         <meta
@@ -26,7 +26,7 @@ const Services: FC = () => {
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="text-2xl xl:h2 mb-6"
+              className="text-2xl xl:h2 mb-6 mt-16"
             >
               Soluções digitais que impulsionam o seu negócio
               <span className="text-accent">.</span>
@@ -48,7 +48,7 @@ const Services: FC = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="w-full text-sm xl:text-1xl xl:max-w-[65%]"
+            className="w-full text-sm xl:text-1xl xl:max-w-[65%] xl:mt-20"
           >
             <ServiceSlider />
           </motion.div>
